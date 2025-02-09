@@ -34,13 +34,7 @@
                 </div>   
             </div>
 
-            <div class="w-full flex border-8 gap-10 p-4">
-              <div class="w-2/12 h-[100px] bg-gray-400 border-8"></div>
-                <div class="mt-3">
-                  <p class="w-full flex-nowrap text-xl">Further Verification Required</p>
-                  <p>Additional verification is needed for your case.</p>
-                </div>   
-            </div>
+            
 
             <div class="w-full flex border-8 gap-10 p-4">
               <div class="w-2/12 h-[100px] bg-gray-400 border-8"></div>

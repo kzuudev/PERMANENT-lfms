@@ -48,6 +48,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/html/lfms.com
+            cd /var/www/html/PERMANENT-lfms
             php artisan migrate --force
             php artisan optimize

@@ -39,7 +39,7 @@ jobs:
           SOURCE: "."
           REMOTE_HOST: ${{ secrets.VPS_HOST }}
           REMOTE_USER: ${{ secrets.VPS_USER }}
-          TARGET: "/var/www/html/PERMANENT-lfms"
+          TARGET: "/var/www/html/178.128.20.16"
 
       - name: Run Remote/Artisan Commands
         uses: appleboy/ssh-action@v0.1.6
@@ -48,6 +48,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/html/PERMANENT-lfms
+            cd /var/www/html/178.128.20.16
             php artisan migrate --force
             php artisan optimize

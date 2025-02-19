@@ -50,7 +50,10 @@
       </div>
     </div>
 
-    
+    <footer class="w-full flex items-center justify-center pt-40 pb-2 text-[12px]">
+        © 2025 Lost and Found Management System (JRU RECLAMERS)
+    </footer>
+  
 </x-app-layout>
 
 

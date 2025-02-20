@@ -19,6 +19,10 @@ Route::get('/tracking', function () {
     return view('tracking');
 })->middleware(['auth', 'verified'])->name('tracking');
 
+Route::get('/admin-dashboard', function () {
+    return view('admin-dashboard');
+})->middleware(['auth', 'verified'])->name('admin');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

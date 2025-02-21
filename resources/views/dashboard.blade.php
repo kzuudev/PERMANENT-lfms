@@ -1,5 +1,4 @@
 <x-app-layout>
-
 <x-slot name="header">
     <div class="flex items-center justify-between space-x-6">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
@@ -50,7 +49,7 @@
       </div>
     </div>
 
-    <footer class="w-full flex items-center justify-center pt-40 pb-2 text-[12px]">
+    <footer class="w-full flex items-center justify-center pt-40 pb-2 my-80 text-[12px]">
         © 2025 Lost and Found Management System (JRU RECLAMERS)
     </footer>
   

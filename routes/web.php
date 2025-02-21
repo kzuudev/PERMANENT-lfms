@@ -23,6 +23,13 @@ Route::get('/admin-dashboard', function () {
     return view('admin-dashboard');
 })->middleware(['auth', 'verified'])->name('admin');
 
+Route::get('/item-list', function () {
+    return view('item-list');
+})->middleware(['auth', 'verified'])->name('item');
+
+Route::get('/reports', function () {
+    return view('reports');
+})->middleware(['auth', 'verified'])->name('reports');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

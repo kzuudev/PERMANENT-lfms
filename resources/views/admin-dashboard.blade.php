@@ -6,9 +6,9 @@
             </h1>
 
             <ul class="flex gap-4 bg-white p-4 rounded-md items-center">
-                <a href=""><li class="hover:underline duration-700 cursor-pointer">Dashboard</li></a>
-                <a href=""><li class="hover:underline duration-700 cursor-pointer">Lost Item List</li></a>
-                <a href=""><li class="hover:underline duration-700 cursor-pointer">Latest Reports</li></a>
+                <a href="{{ route('admin') }}"><li class="hover:underline duration-700 cursor-pointer">Dashboard</li></a>
+                <a href="{{ route('item') }}"><li class="hover:underline duration-700 cursor-pointer">Lost Item List</li></a>
+                <a href="{{ route('reports') }}"><li class="hover:underline duration-700 cursor-pointer">Latest Reports</li></a>
             </ul>
         </div>
     </x-slot>
@@ -19,12 +19,12 @@
       </div>
 
       <div class="w-full grid grid-cols-2 grid-rows-2 my-28 px-12 gap-y-12 gap-x-8">
-          <div class=" col-span-1 p-7 border-4">
+          <div class="col-span-1 p-7 border-4">
             <h2 class="text-gray-400 text-[20px]">Total Lost Item</h2>
             <p class="text-[32px]">120</p>
           </div>
 
-          <div class=" col-span-1 p-7 border-4">
+          <div class="col-span-1 p-7 border-4">
             <h2 class="text-gray-400 text-[20px]">Electronics</h2>
             <p class="text-[32px]">15</p>
           </div>

@@ -30,7 +30,6 @@
                     <a href="{{ route('admin') }}"><li class="hover:bg-gray-300 px-2 py-1 rounded cursor-pointer">Dashboard</li></a>
                     <a href="{{ route('item') }}"><li class="hover:bg-gray-300 px-2 py-1 rounded cursor-pointer">Lost Item List</li></a>
                     <a href="{{ route('reports') }}"><li class="hover:bg-gray-300 px-2 py-1 rounded cursor-pointer">Latest Reports</li></a>
-                    <a href="{{ route('reports') }}"><li class="hover:bg-gray-300 px-2 py-1 rounded cursor-pointer">Admins</li></a>
             </ul>
         </div>
 

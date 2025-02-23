@@ -8,7 +8,7 @@
     </x-slot>
 
 
-    <div class="w-full h-full flex gap-12 bg-gray-100 ">
+    <div class="w-full h-full flex  bg-gray-100 ">
       <div class="bg-gray-800 border-r-2 border-white">
         <div class="mx-4 mt-8 mb-2">
             <form method="GET" action="">
@@ -49,22 +49,68 @@
         </div>
       </div>
 
-      
-      <div class="w-full  h-[650px] flex flex-col mx-4 mt-8 mb-2">
+      <div class="w-full h-[650px] flex flex-col mt-8 mb-2 mx-6">
         <div class="w-full">
-          <h2 class="text-center text-[32px]">Lost Item Lists</h2>
+          <h2 class="bg-white text-[24px] px-7 py-2 rounded">Admin Dashboard</h2>
         </div>
+    
+         
+            <div class="grid grid-cols-3 mt-8 gap-6">
+              <div class="flex items-center justify-between px-4 py-3 border-b-2 bg-white border-b-2 border-blue-500 rounded">
+                <div class="px-4 py-10 ">
+                  <h3>Listed Found items</h3>
+                  <p>2</p>
+                </div>
+                
+                <img src="../images/icons8-file-48.png" alt="">
+              </div>
+
+              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+                  <div class="px-4 py-10">
+                    <h3>New Request</h3>
+                    <p>1</p>
+                  </div>
+
+                  <img src="../images/request.png" alt="">
+              </div>
+
+              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+                  <div  class="px-4 py-10">
+                    <h3>In Process Requests</h3>
+                    <p>3</p>
+                  </div>
+
+                  <img src="../images/process.png" alt="">
+              </div>
+
+              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+                  <div  class="px-4 py-10">
+                    <h3>Claimed Items</h3>
+                    <p>5</p>
+                  </div>
+  
+                  <img src="../images/claimed.png" alt="">
+              </div>
+
+              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+                  <div  class="px-4 py-10">
+                      <h3>Unclaimed Items</h3>
+                      <p>1</p>
+                </div>
+    
+                    <img src="../images/rejected.png" alt="">
+                </div>
+
+                <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+                  <div  class="px-4 py-10">
+                      <h3>Rejected Requests</h3>
+                      <p>2</p>
+                  </div>
+    
+                    <img src="../images/rejected.png" alt="">
+                </div>
+            </div>
         
-        <div class="w-full py-12 px-4">
-           <div>
-              <ul class="flex gap-[12rem] text-[18px]">
-                <li>Name</li>
-                <li>Finder</li>
-                <li>Category</li>
-                <li>Date Lost</li>
-              </ul>
-           </div>
-        </div>
       </div>
     </div>
 

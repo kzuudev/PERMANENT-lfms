@@ -19,8 +19,8 @@ Route::get('/tracking', function () {
     return view('tracking');
 })->middleware(['auth', 'verified'])->name('tracking');
 
-Route::get('/admin-dashboard', function () {
-    return view('admin-dashboard');
+Route::get('/admin', function () {
+    return view('admin');
 })->middleware(['auth', 'verified'])->name('admin');
 
 Route::get('/item-list', function () {

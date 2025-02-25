@@ -69,7 +69,7 @@
 
                   <div class="flex flex-col gap-2">
                     <h4 class="text-lg text-gray-400">Student ID</h4>
-                    <p class="text-sm">23-260559</p>
+                    <p class="text-sm">23-260829</p>
                   </div>
 
                   <div class="flex flex-col gap-2">

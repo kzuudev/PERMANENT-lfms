@@ -27,9 +27,9 @@ Route::get('/item-list', function () {
     return view('item-list');
 })->middleware(['auth', 'verified'])->name('item');
 
-Route::get('/reports', function () {
-    return view('reports');
-})->middleware(['auth', 'verified'])->name('reports');
+Route::get('/claim-requests', function () {
+    return view('claim-requests');
+})->middleware(['auth', 'verified'])->name('claim');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

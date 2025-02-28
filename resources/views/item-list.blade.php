@@ -15,12 +15,7 @@
               <div class="flex items-center gap-2">
                 <input type="text" name="query" placeholder="Search" class="rounded">
               </div>
-                <ul id="filter" class="flex gap-2 hidden">
-                    <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Electronics</li>
-                    <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Clothing</li>
-                    <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Books</li>
-                    <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Accessories</li>
-                </ul>
+              
             </form>
          </div>
 
@@ -58,16 +53,27 @@
               <form method="GET" action="">
                 <div class="w-64 flex items-center gap-2 border-2">
                   <input class="outline-none border-none" type="text" name="query" placeholder="Search" >
-                  <button>
-                    <img class="ml-1" src="../images/filter.png" alt="">
+                  <button id="filter-button" class="relative">
+                    <img class="ml-1 focus" src="../images/filter.png" alt="">
                   </button>
                 </div>
-                  <ul id="filter" class="flex gap-2 hidden">
-                      <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Electronics</li>
-                      <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Clothing</li>
-                      <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Books</li>
-                      <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Accessories</li>
-                  </ul>
+
+                <div id="filter" class="w-8/12 flex items-center p-4 mt-2 bg-gray-100 absolute border rounded-md hidden">
+                  <h3 class="w-full font-medium">Search in</h3>
+                    <div class="w-full flex flex-nowrap gap-9">
+                      <button class="w-full flex justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                        <p class="font-medium">All Submissions</p>
+                        <p>1</p>
+                      </button>
+                     
+                      <button class="w-full flex justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                        <p class="font-medium">All Time</p>
+                        <p>1</p>
+                      </button>
+                    </div>
+                </div>
+                  
+                 
               </form>
          </div>
           </div>
@@ -308,8 +314,5 @@
     </div>
 
 
-    <!-- <script src="{{ asset('js/filter.js') }}"></script> -->
-    <!-- <footer class="w-full flex items-center justify-center absolute bottom-4 text-[12px]">
-        © 2025 Lost and Found Management System (JRU RECLAMERS)
-    </footer> -->
+    {{-- <script src="{{ asset('js/filter.js') }}"></script>  --}}
 </x-app-layout>

@@ -58,7 +58,7 @@
                   </button>
                 </div>
 
-                <div id="filter" class="w-8/12 flex items-center p-4 mt-2 bg-gray-100 absolute border rounded-md hidden">
+                <div id="filter" class="w-6/12 flex items-center p-4 mt-2 bg-gray-100 absolute border rounded-md hidden">
                   <h3 class="w-full font-medium">Search in</h3>
                     <div class="w-full flex flex-nowrap gap-9">
                       <button id="status-button" class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
@@ -70,27 +70,33 @@
                         <ul class="w-[22.4%] flex flex-col p-2 bg-gray-300 gap-1 rounded">
                           <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
                             <li>
-                              Read
+                              Pending
                             </li>
                           </a>
 
                           <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
                             <li>
-                              Unread
+                              Matched
                             </li>
                           </a>
 
                           <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
                             <li>
-                              Urgent
+                              Reopened
+                            </li>
+                          </a>
+
+                          <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                            <li>
+                              Unresolved
                             </li>
                           </a>
                         </ul>
                       </div>
                      
-                      <button class="w-full flex justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                      <button class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
                         <p class="font-medium">All Time</p>
-                        <p>1</p>
+                        <a id="status-lists" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
                       </button>
                     </div>
                 </div>

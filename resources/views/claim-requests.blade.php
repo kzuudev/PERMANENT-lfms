@@ -14,7 +14,7 @@
                     <div class="flex items-center gap-2">
                         <input type="text" name="query" placeholder="Search" class="rounded">
                     </div>
-                    <ul id="filter" class="flex gap-2 hidden">
+                    <ul  class="flex gap-2 hidden">
                         <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Electronics</li>
                         <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Clothing</li>
                         <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Books</li>
@@ -62,16 +62,61 @@
             <div class="w-full">
                 <h2 class="text-[32px]">Claim Requests</h2>
 
-                <!-- <div class="ml-8 mt-4 mb-2">
+                <div class=" mt-8 mb-2">
                     <form method="GET" action="">
-                        <div class="w-64 flex items-center gap-2 border-2">
-                            <input class="outline-none border-none" type="text" name="query" placeholder="Search">
-                            <button>
-                                <img class="ml-1" src="../images/filter.png" alt="">
+                      <div class="w-64 flex items-center gap-2 border-2">
+                        <input class="outline-none border-none" type="text" name="query" placeholder="Search" >
+                        <button id="filter-button" class="relative">
+                          <img class="ml-1 focus" src="../images/filter.png" alt="">
+                        </button>
+                      </div>
+      
+                      <div id="filter" class="w-6/12 flex items-center p-4 mt-2 bg-gray-100 absolute border rounded-md hidden">
+                        <h3 class="w-full font-medium">Search in</h3>
+                          <div class="w-full flex flex-nowrap gap-9">
+                            <button id="status-button" class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                              <p class="font-medium">All Submissions</p>
+                              <a id="status-lists" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
                             </button>
-                        </div>
+      
+                            <div id="item-lists" class="w-full mt-2  absolute top-14 hidden">
+                              <ul class="w-[22.4%] flex flex-col p-2 bg-gray-300 gap-1 rounded">
+                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                  <li>
+                                    Pending
+                                  </li>
+                                </a>
+      
+                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                  <li>
+                                    Matched
+                                  </li>
+                                </a>
+      
+                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                  <li>
+                                    Reopened
+                                  </li>
+                                </a>
+      
+                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                  <li>
+                                    Unresolved
+                                  </li>
+                                </a>
+                              </ul>
+                            </div>
+                           
+                            <button class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                              <p class="font-medium">All Time</p>
+                              <a id="status-lists" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
+                            </button>
+                          </div>
+                      </div>
+                        
+                       
                     </form>
-                </div> -->
+               </div>
             </div>
 
             <div class="mt-8">

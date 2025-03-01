@@ -76,6 +76,11 @@
                       <p class="font-medium">All Time</p>
                       <p>1</p>
                     </button>
+
+                    <button class="w-full flex justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                      <p class="font-medium">All Time</p>
+                      <p>1</p>
+                    </button>
                 </div>
                   
                  

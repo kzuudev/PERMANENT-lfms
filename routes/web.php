@@ -31,6 +31,9 @@ Route::get('/claim-requests', function () {
     return view('claim-requests');
 })->middleware(['auth', 'verified'])->name('claim');
 
+
+
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

@@ -15,3 +15,13 @@ document
         statusList.style.display = "flex";
         statusList.style.transition = "opacity 0.3s ease-in-out, height 0.3s ease-in-out";
     });
+
+
+    document
+    .getElementById("dateFilter")
+    .addEventListener("click", function (event) {
+        event.preventDefault(); // Prevents form submission if inside a <form>
+        const filterDate = document.getElementById("dateFilterForm");
+        filterDate.style.display = "flex";
+        filterDate.style.transition = "opacity 0.3s ease-in-out, height 0.3s ease-in-out";
+    });

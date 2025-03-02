@@ -74,43 +74,60 @@
                       <div id="filter" class="w-6/12 flex items-center p-4 mt-2 bg-gray-100 absolute border rounded-md hidden">
                         <h3 class="w-full font-medium">Search in</h3>
                           <div class="w-full flex flex-nowrap gap-9">
-                            <button id="status-button" class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
-                              <p class="font-medium">All Submissions</p>
-                              <a id="status-lists" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
-                            </button>
-      
-                            <div id="item-lists" class="w-full mt-2  absolute top-14 hidden">
-                              <ul class="w-[22.4%] flex flex-col p-2 bg-gray-300 gap-1 rounded">
-                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
-                                  <li>
-                                    Pending
-                                  </li>
-                                </a>
-      
-                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
-                                  <li>
-                                    Matched
-                                  </li>
-                                </a>
-      
-                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
-                                  <li>
-                                    Reopened
-                                  </li>
-                                </a>
-      
-                                <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
-                                  <li>
-                                    Unresolved
-                                  </li>
-                                </a>
-                              </ul>
+
+                            <div class="w-full">
+                              <button id="status-button" class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                                <p class="font-medium">All Submissions</p>
+                                <a id="status-lists" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
+                              </button>
+        
+                              <div id="item-lists" class="w-full mt-2  absolute top-14 hidden">
+                                <ul class="w-[22.4%] flex flex-col p-2 bg-gray-300 gap-1 rounded">
+                                  <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                    <li>
+                                      Pending
+                                    </li>
+                                  </a>
+        
+                                  <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                    <li>
+                                      Matched
+                                    </li>
+                                  </a>
+        
+                                  <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                    <li>
+                                      Reopened
+                                    </li>
+                                  </a>
+        
+                                  <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                    <li>
+                                      Unresolved
+                                    </li>
+                                  </a>
+                                </ul>
+                              </div>
+                            </div>
+                            
+                           
+                            <div class="w-full">
+                              <button id="dateFilter" class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                                <p class="font-medium">All Time</p>
+                                <a id="dateList" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
+                              </button>
+  
+                              <div id="dateFilterForm"  class="w-full mt-2 absolute top-14 hidden">
+                                <form class="flex">
+                                  <input class="mr-4 rounded" type="date" id="from_date" name="from_date">
+                                  <input class="rounded" type="date" id="to_date" name="to_date">
+                                  {{-- <button type="submit">Apply Filter</button> --}}
+                                </form>
+                              </div>
                             </div>
                            
-                            <button class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
-                              <p class="font-medium">All Time</p>
-                              <a id="status-lists" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
-                            </button>
+
+                          
                           </div>
                       </div>
                         

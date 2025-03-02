@@ -51,10 +51,10 @@
 
             <div class="ml-8 mt-8 mb-2">
               <form method="GET" action="">
-                <div class="w-64 flex items-center gap-2 border-2">
+                <div class="w-60 flex items-center gap-2 border-2">
                   <input class="outline-none border-none" type="text" name="query" placeholder="Search" >
                   <button id="filter-button" class="relative">
-                    <img class="ml-1 focus" src="../images/filter.png" alt="">
+                    <img class="w-5 h-5 " src="../images/filter.png" alt="">
                   </button>
                 </div>
 
@@ -94,10 +94,20 @@
                         </ul>
                       </div>
                      
-                      <button class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
-                        <p class="font-medium">All Time</p>
-                        <a id="status-lists" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
-                      </button>
+                      <div class="w-full">
+                        <button id="dateFilter" class="w-full flex items-center justify-between py-2 px-2 bg-white flex-nowrap text-sm border rounded">
+                          <p class="font-medium">All Time</p>
+                          <a id="dateList" class="w-3 h-3 relative" href=""><img src="../images/down-arrow.png" alt=""></a>
+                        </button>
+
+                        <div id="dateFilterForm" class="w-2/5 h-2/5 mt-2 absolute top-14 hidden">
+                          <form class="flex">
+                            <input class="mr-4 text-xs rounded" type="date" id="from_date" name="from_date">
+                            <input class="text-xs rounded" type="date" id="to_date" name="to_date">
+                            {{-- <button type="submit">Apply Filter</button> --}}
+                          </form>
+                        </div>
+                      </div>
                     </div>
                 </div>
                   

@@ -1,17 +1,17 @@
 <x-app-layout>
-<x-slot name="header">
-    <div class="flex items-center justify-between space-x-6">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Lost & Found Management System') }}
-        </h2>
+    <x-slot name="header">
+        <div class="flex items-center justify-between space-x-6">
+            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+                {{ __('Lost & Found Management System') }}
+            </h2>
 
-        <ul class="flex bg-white p-4 rounded-md">
-            <li class="hover:bg-gray-300 px-2 py-1 rounded">Home</li>
-            <li class="hover:bg-gray-300 px-2 py-1 rounded">About</li>
-            <li class="hover:bg-gray-300 px-2 py-1 rounded">Contact</li>
-        </ul>
-    </div>
-</x-slot>
+            <ul class="flex bg-white p-4 rounded-md">
+                <li class="hover:bg-gray-300 px-2 py-1 rounded">Home</li>
+                <li class="hover:bg-gray-300 px-2 py-1 rounded">About</li>
+                <li class="hover:bg-gray-300 px-2 py-1 rounded">Contact</li>
+            </ul>
+        </div>
+    </x-slot>
 
 
     <!-- <div class="py-12">

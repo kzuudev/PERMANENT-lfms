@@ -8,7 +8,7 @@
     </x-slot>
 
 
-    <div class="w-full h-full flex  bg-gray-100 ">
+    <div class="w-full h-full flex bg-gray-100 ">
       <div class="bg-gray-800 border-r-2 border-white">
         <div class="mx-4 mt-8 mb-2">
             <form method="GET" action="">
@@ -40,16 +40,16 @@
             </ul>
         </div>
 
-        <div class="w-28 absolute bottom-4">
-            <ul class="flex flex-col gap-2  p-4 rounded-md">
-               <a href=""><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
-                <img class="w-6 h-6" src="../images/logout.png" alt="">
-                Logout</li></a>
-            </ul>
+        <div class="w-56 absolute bottom-4 p-4">
+               <a href="" class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
+                  <img class="w-6 h-6" src="../images/logout.png" alt="">
+                  <p>Logout</p>
+              </a>   
         </div>
+
       </div>
 
-      <div class="w-full h-[650px] flex flex-col mt-8 mb-2 mx-6">
+      <div class="w-full h-[669px] flex flex-col mt-8 mb-2 mx-6">
         <div class="w-full">
           <h2 class="bg-white text-[24px] px-7 py-2 rounded">Admin Dashboard</h2>
         </div>

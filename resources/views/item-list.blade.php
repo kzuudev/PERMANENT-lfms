@@ -8,7 +8,7 @@
     </x-slot>
 
 
-    <div class="w-full h-full flex gap-12 bg-gray-100">
+    <div class="w-full h-full flex gap-12 bg-gray-100 class">
       <div class="bg-gray-800 border-r-2 border-white">
         <div class="mx-4 mt-8 mb-2">
             <form method="GET" action="">
@@ -119,34 +119,35 @@
           <div class="w-full px-4 px-4 mt-4 overflow-auto">
             <div class="w-full grid grid-cols-3 px-4 px-4 mt-4 gap-6">
 
-              <div name="card" class="flex flex-col bg-white rounded-lg gap-3">
+              <div class="flex flex-col bg-white rounded-lg gap-3">
                   <div class="mb-3">
-                      <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
+                      <h3 id="category" class="p-6 bg-[#eef5fd]">Accessories</h3>
                   </div>
 
-                  <div class="flex flex-col gap-4 pl-2.5 px-2">
+              <div data-name="card"  class="flex flex-col gap-4 pl-2.5 px-2">
                       <div class="border-b-2 border-gray-200">
-                        <img class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
+                        <img id="item-img" class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
                       </div>
 
                       <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Student ID</h4>
-                        <p class="text-sm">23-260829</p>
+                        <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
+                        <p id="student-id" class="text-sm">23-260829</p>
                       </div>
 
                       <div class="flex flex-col gap-2">
                         <h4 class="text-lg text-gray-400">Email</h4>
-                        <p class="text-sm">johnkevin.delacruz@my.jru.edu</p>
+                        <p id="student-email" class="text-sm">johnkevin.delacruz@my.jru.edu</p>
                       </div>
 
                       <div class="flex flex-col gap-2">
                         <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                        <p class="text-sm">Watch</p>
+                        <p id="find-item"
+                         class="text-sm">Watch</p>
                       </div>
 
                       <div class="flex flex-col gap-2">
                         <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                        <p class="text-sm">Library at 3:00 pm</p>
+                        <p id="place-found" class="text-sm">Library at 3:00 pm</p>
                       </div>
 
                       <div class="flex flex-col gap-2">
@@ -156,7 +157,7 @@
                   </div>
               </div>
             
-              <div name="card" class="flex flex-col bg-white rounded-lg gap-3">
+              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3 card">
                   <div class="mb-3">
                       <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
                   </div>
@@ -193,7 +194,7 @@
                   </div>
               </div>
 
-              <div name="card" class="flex flex-col bg-white rounded-lg gap-3">
+              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
                   <div class="mb-3">
                       <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
                   </div>
@@ -230,7 +231,7 @@
                   </div>
               </div>
 
-              <div name="card" class="flex flex-col bg-white rounded-lg gap-3">
+              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
                   <div class="mb-3">
                       <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
                   </div>
@@ -267,7 +268,7 @@
                   </div>
               </div>
 
-              <div name="card" class="flex flex-col bg-white rounded-lg gap-3">
+              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
                   <div class="mb-3">
                       <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
                   </div>
@@ -304,7 +305,7 @@
                   </div>
               </div>
 
-              <div name="card" class="flex flex-col bg-white rounded-lg gap-3">
+              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
                   <div class="mb-3">
                       <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
                   </div>
@@ -341,7 +342,12 @@
                   </div>
               </div>
               
+           </div>   
 
+           <div id="modal" >
+             <div id="selected-card" class="hidden">
+
+             </div>
            </div>
         </div>
 
@@ -352,5 +358,4 @@
     </div>
 
 
-    {{-- <script src="{{ asset('js/filter.js') }}"></script>  --}}
 </x-app-layout>

@@ -8,7 +8,7 @@
     </x-slot>
 
 
-    <div class="w-full h-full flex gap-12 bg-gray-100 class">
+    <div class="w-full h-full flex gap-12 bg-gray-100">
       <div class="bg-gray-800 border-r-2 border-white">
         <div class="mx-4 mt-8 mb-2">
             <form method="GET" action="">
@@ -41,11 +41,11 @@
                 <img class="w-6 h-6" src="../images/logout.png" alt="">
                 Logout</li></a>
             </ul>
-        </div>
+          </div>
       </div>
 
       
-      <div class="w-full h-[669px] flex flex-col mx-4 mt-8">
+      <div class="w-full h-[669px] flex flex-col mx-4 mt-8 relative">
           <div class="w-full">
             <h2 class="text-center text-[32px]">Lost Item Lists</h2>
 
@@ -116,246 +116,250 @@
          </div>
           </div>
         
-          <div class="w-full px-4 px-4 mt-4 overflow-auto">
+      <div class="w-full px-4 px-4 mt-4 overflow-auto">
             <div class="w-full grid grid-cols-3 px-4 px-4 mt-4 gap-6">
+                <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
+                    <div class="mb-3">
+                        <h3 class="category p-6 bg-[#eef5fd]">Accessories</h3>
+                    </div>
 
-              <div class="flex flex-col bg-white rounded-lg gap-3">
-                  <div class="mb-3">
-                      <h3 id="category" class="p-6 bg-[#eef5fd]">Accessories</h3>
-                  </div>
+                  <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
+                        <div class="border-b-2 border-gray-200">
+                          <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
+                        </div>
 
-              <div data-name="card"  class="flex flex-col gap-4 pl-2.5 px-2">
-                      <div class="border-b-2 border-gray-200">
-                        <img id="item-img" class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                      </div>
+                        <div class="flex flex-col gap-2">
+                          <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
+                          <p class="student-id text-sm">23-260829</p>
+                        </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
-                        <p id="student-id" class="text-sm">23-260829</p>
-                      </div>
+                        <div class="flex flex-col gap-2">
+                          <h4 class="text-lg text-gray-400">Email</h4>
+                          <p  class="student-email text-sm">johnkevin.delacruz@my.jru.edu</p>
+                        </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Email</h4>
-                        <p id="student-email" class="text-sm">johnkevin.delacruz@my.jru.edu</p>
-                      </div>
+                        <div class="flex flex-col gap-2">
+                          <h4 class="text-lg text-gray-400">What did you lose/find</h4>
+                          <p 
+                          class="find-item text-sm">Watch</p>
+                        </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                        <p id="find-item"
-                         class="text-sm">Watch</p>
-                      </div>
+                        <div class="flex flex-col gap-2">
+                          <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
+                          <p class="place-found text-sm">Library at 3:00 pm</p>
+                        </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                        <p id="place-found" class="text-sm">Library at 3:00 pm</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Turned it by</h4>
-                        <p class="text-sm">John Kevin</p>
-                      </div>
-                  </div>
+                        <div class="flex flex-col gap-2">
+                          <h4 class="text-lg text-gray-400">Turned it by</h4>
+                          <p  class="postName text-sm">John Kevin</p>
+                        </div>
+                    </div>
               </div>
+
+              <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
+                <div class="mb-3">
+                    <h3 class="category p-6 bg-[#eef5fd]">Electronics</h3>
+                </div>
+
+              <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
+                    <div class="border-b-2 border-gray-200">
+                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
+                      <p class="student-id text-sm">23-250216</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Email</h4>
+                      <p  class="student-email text-sm">mico.villanueva@my.jru.edu</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
+                      <p 
+                       class="find-item text-sm">Laptop</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
+                      <p class="place-found text-sm">Centennial at 1:00 pm</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Turned it by</h4>
+                      <p  class="postName text-sm">Mico Villanueva</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
+              <div class="mb-3">
+                  <h3 class="category p-6 bg-[#eef5fd]">Books</h3>
+              </div>
+
+                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
+                    <div class="border-b-2 border-gray-200">
+                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
+                      <p class="student-id text-sm">23-203229</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Email</h4>
+                      <p  class="student-email text-sm">shanhiro.rosario@my.jru.edu</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
+                      <p 
+                      class="find-item text-sm">Integrative Programming 1</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
+                      <p class="place-found text-sm">Ground Floor at 4:00 pm</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Turned it by</h4>
+                      <p  class="postName text-sm">Shan Hiro Rosario</p>
+                    </div>
+                </div>
+            </div> 
             
-              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3 card">
-                  <div class="mb-3">
-                      <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
-                  </div>
-
-                  <div class="flex flex-col gap-4 pl-2.5 px-2">
-                      <div class="border-b-2 border-gray-200">
-                        <img class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Student ID</h4>
-                        <p class="text-sm">23-260829</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Email</h4>
-                        <p class="text-sm">johnkevin.delacruz@my.jru.edu</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                        <p class="text-sm">Watch</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                        <p class="text-sm">Library at 3:00 pm</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Turned it by</h4>
-                        <p class="text-sm">John Kevin</p>
-                      </div>
-                  </div>
+            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
+              <div class="mb-3">
+                  <h3 class="category p-6 bg-[#eef5fd]">Clothing</h3>
               </div>
 
-              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
-                  <div class="mb-3">
-                      <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
-                  </div>
+                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
+                    <div class="border-b-2 border-gray-200">
+                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
+                    </div>
 
-                  <div class="flex flex-col gap-4 pl-2.5 px-2">
-                      <div class="border-b-2 border-gray-200">
-                        <img class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
+                      <p class="student-id text-sm">23-258981</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Student ID</h4>
-                        <p class="text-sm">23-260829</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Email</h4>
+                      <p  class="student-email text-sm">shanhiro.rosario@my.jru.edu</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Email</h4>
-                        <p class="text-sm">johnkevin.delacruz@my.jru.edu</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
+                      <p 
+                      class="find-item text-sm">Black Hoodie</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                        <p class="text-sm">Watch</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
+                      <p class="place-found text-sm">Canteen at 3:00 pm</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                        <p class="text-sm">Library at 3:00 pm</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Turned it by</h4>
+                      <p  class="postName text-sm">Alvin Remitilla</p>
+                    </div>
+                </div>
+            </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Turned it by</h4>
-                        <p class="text-sm">John Kevin</p>
-                      </div>
-                  </div>
+            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
+              <div class="mb-3">
+                  <h3 class="category p-6 bg-[#eef5fd]">Accessories</h3>
               </div>
 
-              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
-                  <div class="mb-3">
-                      <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
-                  </div>
+                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
+                    <div class="border-b-2 border-gray-200">
+                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
+                    </div>
 
-                  <div class="flex flex-col gap-4 pl-2.5 px-2">
-                      <div class="border-b-2 border-gray-200">
-                        <img class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
+                      <p class="student-id text-sm">23-232229</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Student ID</h4>
-                        <p class="text-sm">23-260829</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Email</h4>
+                      <p  class="student-email text-sm">joshua.anoos@my.jru.edu</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Email</h4>
-                        <p class="text-sm">johnkevin.delacruz@my.jru.edu</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
+                      <p 
+                      class="find-item text-sm">Lipstick</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                        <p class="text-sm">Watch</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
+                      <p class="place-found text-sm">Parking at 2:00 pm</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                        <p class="text-sm">Library at 3:00 pm</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Turned it by</h4>
+                      <p  class="postName text-sm">Joshua Anoors</p>
+                    </div>
+                </div>
+            </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Turned it by</h4>
-                        <p class="text-sm">John Kevin</p>
-                      </div>
-                  </div>
+            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
+              <div class="mb-3">
+                  <h3 class="category p-6 bg-[#eef5fd]">Electronics</h3>
               </div>
 
-              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
-                  <div class="mb-3">
-                      <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
-                  </div>
+                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
+                    <div class="border-b-2 border-gray-200">
+                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
+                    </div>
 
-                  <div class="flex flex-col gap-4 pl-2.5 px-2">
-                      <div class="border-b-2 border-gray-200">
-                        <img class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
+                      <p class="student-id text-sm">23-202129</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Student ID</h4>
-                        <p class="text-sm">23-260829</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Email</h4>
+                      <p  class="student-email text-sm">joshuaythiel.arriesgado@my.jru.edu</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Email</h4>
-                        <p class="text-sm">johnkevin.delacruz@my.jru.edu</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
+                      <p 
+                      class="find-item text-sm">Phone (Iphone 16 promax)</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                        <p class="text-sm">Watch</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
+                      <p class="place-found text-sm">Room 403 at 8:00 am</p>
+                    </div>
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                        <p class="text-sm">Library at 3:00 pm</p>
-                      </div>
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">Turned it by</h4>
+                      <p  class="postName text-sm">Joshua Ythiel Arriesgado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+      <div id="modal" class="w-2/4 absolute right-0 bottom-[-60px] hidden">
+        <div id="selected-card" class="card w-full flex flex-col bg-white rounded-lg gap-3 drop-shadow-lg hidden">
 
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Turned it by</h4>
-                        <p class="text-sm">John Kevin</p>
-                      </div>
-                  </div>
-              </div>
-
-              <div data-name="card" class="flex flex-col bg-white rounded-lg gap-3">
-                  <div class="mb-3">
-                      <h3 class="p-6 bg-[#eef5fd]">Accessories</h3>
-                  </div>
-
-                  <div class="flex flex-col gap-4 pl-2.5 px-2">
-                      <div class="border-b-2 border-gray-200">
-                        <img class="w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Student ID</h4>
-                        <p class="text-sm">23-260829</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Email</h4>
-                        <p class="text-sm">johnkevin.delacruz@my.jru.edu</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                        <p class="text-sm">Watch</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                        <p class="text-sm">Library at 3:00 pm</p>
-                      </div>
-
-                      <div class="flex flex-col gap-2">
-                        <h4 class="text-lg text-gray-400">Turned it by</h4>
-                        <p class="text-sm">John Kevin</p>
-                      </div>
-                  </div>
-              </div>
-              
-           </div>   
-
-           <div id="modal" >
-             <div id="selected-card" class="hidden">
-
-             </div>
-           </div>
         </div>
 
 
-           </div>
+
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-
+  
 </x-app-layout>

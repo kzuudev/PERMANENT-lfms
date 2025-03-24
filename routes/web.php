@@ -1,7 +1,11 @@
 <?php
-
-use App\Http\Controllers\ProfileController;
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Laravel\Socialite\Facades\Socialite;
+use App\Http\Controllers\ProfileController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,7 +35,25 @@ Route::get('/claim-requests', function () {
     return view('claim-requests');
 })->middleware(['auth', 'verified'])->name('claim');
 
+Route::get('/auth/google/redirect', function (Request $request) {
+    return Socialite::driver("google")->redirect();
+});
 
+Route::get('/auth/google/callback', function () {
+    $googleUser = Socialite::driver('google')->user();
+
+    $user = User::updateOrCreate(
+        ['google_id' => $googleUser->getId()],
+        [
+            'name' => $googleUser->getName(),
+            'email' => $googleUser->getEmail(),
+            'password' => Str::password(12)
+        ]
+    );
+    
+    Auth::login($user);
+    return redirect('/dashboard');
+});
 
 
 Route::middleware('auth')->group(function () {

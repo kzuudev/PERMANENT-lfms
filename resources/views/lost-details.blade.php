@@ -23,9 +23,24 @@
                     </ul>
                 </div>
 
-                <div class="mt-8">
+                <div class="mt-1">
                     <form action="" method="POST" class="w-full" >
                         @csrf
+
+                        <x-input-label for="item-name" :value="__('Item Name')" />
+                        <x-text-input id="item-name" class="block mt-2 mb-4  w-full"
+                            type="text"
+                            name="description"
+                            placeholder="Item Name"
+                        />
+
+                        <x-input-label for="location" :value="__('Location Found')" />
+                        <x-text-input id="description" class="block mt-2 mb-4  w-full"
+                            type="text"
+                            name="description"
+                            placeholder="Where did you lost it"
+                        />
+
                         <x-input-label for="description" :value="__('Item Description')" />
                         <x-text-input id="description" class="block mt-2 mb-4  w-full"
                             type="text"

@@ -348,7 +348,7 @@
         </div>
     </div>   
       <div id="modal" class="w-2/4 absolute right-0 bottom-[-60px] hidden">
-        <div id="selected-card" class="card w-full flex flex-col bg-white rounded-lg gap-3 drop-shadow-lg hidden">
+        <div id="selected-card" class="card w-full flex flex-col bg-white rounded-lg gap-3 drop-shadow-xl hidden">
 
         </div>
 

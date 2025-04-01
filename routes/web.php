@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\GoogleAuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -32,7 +33,8 @@ Route::get('/claim-requests', function () {
 })->middleware(['auth', 'verified'])->name('claim');
 
 
-
+Route::get('auth/google/redirect', [GoogleAuthController::class, 'redirect']);
+Route::get('auth/google/callback', [GoogleAuthController::class, 'callback']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

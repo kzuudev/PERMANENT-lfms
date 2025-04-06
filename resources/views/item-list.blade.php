@@ -145,6 +145,11 @@
                         </div>
 
                         <div class="flex flex-col gap-2">
+                          <h4 class="text-lg text-gray-400">What date did you find it</h4>
+                          <p class="date text-sm">April 7, 2025</p>
+                        </div>
+                        
+                        <div class="flex flex-col gap-2">
                           <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
                           <p class="place-found text-sm">Library at 3:00 pm</p>
                         </div>
@@ -180,6 +185,11 @@
                       <h4 class="text-lg text-gray-400">What did you lose/find</h4>
                       <p 
                        class="find-item text-sm">Laptop</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
+                      <p class="date text-sm">April 7, 2025</p>
                     </div>
 
                     <div class="flex flex-col gap-2">
@@ -221,6 +231,11 @@
                     </div>
 
                     <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
+                      <p class="date text-sm">April 7, 2025</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
                       <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
                       <p class="place-found text-sm">Ground Floor at 4:00 pm</p>
                     </div>
@@ -256,6 +271,11 @@
                       <h4 class="text-lg text-gray-400">What did you lose/find</h4>
                       <p 
                       class="find-item text-sm">Black Hoodie</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
+                      <p class="date text-sm">April 7, 2025</p>
                     </div>
 
                     <div class="flex flex-col gap-2">
@@ -297,6 +317,11 @@
                     </div>
 
                     <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
+                      <p class="date text-sm">April 7, 2025</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
                       <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
                       <p class="place-found text-sm">Parking at 2:00 pm</p>
                     </div>
@@ -335,6 +360,11 @@
                     </div>
 
                     <div class="flex flex-col gap-2">
+                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
+                      <p class="date text-sm">April 7, 2025</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
                       <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
                       <p class="place-found text-sm">Room 403 at 8:00 am</p>
                     </div>
@@ -347,8 +377,8 @@
             </div>
         </div>
     </div>   
-      <div id="modal" class="w-2/4 absolute right-0 bottom-[-60px] hidden">
-        <div id="selected-card" class="card w-full flex flex-col bg-white rounded-lg gap-3 drop-shadow-xl hidden">
+      <div id="modal" class="w-1/4 h-full  absolute right-0 bottom-[2px]  hidden">
+        <div id="selected-card" class="card w-full h-5/6 flex flex-col bg-white rounded-lg gap-3 drop-shadow-xl overflow-auto hidden">
 
         </div>
 

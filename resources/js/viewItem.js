@@ -20,10 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const findItem = items.querySelector(".find-item").innerText;
       const placeFound = items.querySelector(".place-found").innerText;
       const postName = items.querySelector(".postName").innerText;
+      const itemDate = items.querySelector(".date").innerText;
 
       selectedCard.style.display = "flex";
       selectedCard.innerHTML = `
-        <div class="w-full flex flex-col bg-white rounded-lg gap-3">
+        <div class="w-full  h-full flex flex-col bg-white rounded-lg gap-3 overflow-scroll">
           <div class="w-3/5 mb-3">
             <h3 class="p-6 bg-[#eef5fd]">${category}</h3>
           </div>
@@ -42,6 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="flex flex-col gap-2">
               <h4 class="text-lg text-gray-400">What did you lose/find</h4>
               <p class="text-sm">${findItem}</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h4 class="text-lg text-gray-400">Where did you find it?</h4>
+              <p class="text-sm">${itemDate}</p>
             </div>
             <div class="flex flex-col gap-2">
               <h4 class="text-lg text-gray-400">Where did you find it?</h4>

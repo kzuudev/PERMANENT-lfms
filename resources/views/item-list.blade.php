@@ -32,6 +32,10 @@
                     <a href="{{ route('claim') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
                     <img class="w-6 h-6" src="../images/reports.png" alt="">
                       Claim Requests</li></a>
+
+                    <a href="{{ route('assign') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
+                    <img class="w-6 h-6" src="../images/reports.png" alt="">
+                    User Management</li></a>
             </ul>
         </div>
 
@@ -45,7 +49,7 @@
       </div>
 
       
-      <div class="w-full h-[669px] flex flex-col mx-4 mt-8 relative">
+      <div class="w-full h-[698px] flex flex-col mx-4 mt-8 relative">
           <div class="w-full">
             <h2 class="text-center text-[32px]">Lost Item Lists</h2>
 
@@ -115,7 +119,7 @@
               </form>
          </div>
           </div>
-        
+         
       <div class="w-full px-4 px-4 mt-4 overflow-auto">
             <div class="w-full grid grid-cols-3 px-4 px-4 mt-4 gap-6">
                 <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
@@ -377,7 +381,7 @@
             </div>
         </div>
     </div>   
-      <div id="modal" class="w-1/4 h-full  absolute right-0 bottom-[2px]  hidden">
+      <div id="modal" class="w-1/4 h-full absolute right-0 bottom-[2px]  hidden">
         <div id="selected-card" class="card w-full h-5/6 flex flex-col bg-white rounded-lg gap-3 drop-shadow-xl overflow-auto hidden">
 
         </div>

@@ -32,6 +32,14 @@ Route::get('/claim-requests', function () {
     return view('claim-requests');
 })->middleware(['auth', 'verified'])->name('claim');
 
+Route::get('/assign-staff', function () {
+    return view('assign-staff');
+})->middleware(['auth', 'verified'])->name('assign');
+
+Route::get('/add-administrator', function () {
+    return view('add-administrator');
+})->middleware(['auth', 'verified'])->name('add-administrator');
+
 
 Route::get('auth/google/redirect', [GoogleAuthController::class, 'redirect']);
 Route::get('auth/google/callback', [GoogleAuthController::class, 'callback']);

@@ -39,7 +39,7 @@
                       Claim Requests</li></a>
                       
                     <a href="{{ route('assign') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
-                    <img class="w-6 h-6" src="../images/reports.png" alt="">
+                    <img class="w-6 h-6" src="../images/user-management.png" alt="">
                      User Management</li></a>
             </ul>
         </div>

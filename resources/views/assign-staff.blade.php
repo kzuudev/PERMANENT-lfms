@@ -14,12 +14,6 @@
                     <div class="flex items-center gap-2">
                         <input type="text" name="query" placeholder="Search" class="rounded">
                     </div>
-                    <ul  class="flex gap-2 hidden">
-                        <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Electronics</li>
-                        <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Clothing</li>
-                        <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Books</li>
-                        <li class="filter-item text-xs bg-gray-200 px-[0.625rem] py-[0.375rem] rounded-full cursor-pointer">Accessories</li>
-                    </ul>
                 </form>
             </div>
 
@@ -46,7 +40,7 @@
 
                     <a href="{{ route('assign') }}">
                       <li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
-                          <img class="w-6 h-6" src="../images/reports.png" alt="">
+                          <img class="w-6 h-6" src="../images/user-management.png" alt="">
                           User Management
                       </li>
                     </a>
@@ -109,7 +103,7 @@
                   <tbody>
                     <tr class="text-center">
                       <td class="p-2 text-xs border">John Kevin T. Dela Cruz</td>
-                      <td class="p-2 text-xs border">johnkevin.delacruz@admin.edu</td>
+                      <td class="p-2 text-xs border">johnkevin.delacruz@jru.edu</td>
                       <td class="p-2 text-xs border">Lost & Found Staff</td>
                       <td class="p-2 text-xs border">1 hour ago</td>
                       <td class="p-2 text-xs border text-yellow-500 font-semibold">Busy</td>
@@ -119,7 +113,7 @@
                   <tbody>
                     <tr class="text-center">
                       <td class="p-2 text-xs border">Shan Hiro Rosario</td>
-                      <td class="p-2 text-xs border">shanhiro.rosario@admin.edu</td>
+                      <td class="p-2 text-xs border">shanhiro.rosario@jru.edu</td>
                       <td class="p-2 text-xs border">Support Admin</td>
                       <td class="p-2 text-xs border">3 hours ago</td>
                       <td class="p-2 text-xs border text-green-500 font-semibold">Active</td>
@@ -129,7 +123,7 @@
                   <tbody>
                     <tr class="text-center">
                       <td class="p-2 text-xs border">Robelyn Andoy</td>
-                      <td class="p-2 text-xs border">robelyn.andoy@admin.edu</td>
+                      <td class="p-2 text-xs border">robelyn.andoy@jru.edu</td>
                       <td class="p-2 text-xs border">Verification Admin</td>
                       <td class="p-2 text-xs border">5 hours ago</td>
                       <td class="p-2 text-xs border text-yellow-500 font-semibold">Busy</td>
@@ -139,7 +133,7 @@
                   <tbody>
                     <tr class="text-center">
                       <td class="p-2 text-xs border">Mico Villanueva</td>
-                      <td class="p-2 text-xs border">mico.villanueva@admin.edu</td>
+                      <td class="p-2 text-xs border">mico.villanueva@jru.edu</td>
                       <td class="p-2 text-xs border">Basketball Player</td>
                       <td class="p-2 text-xs border">24 hours ago</td>
                       <td class="p-2 text-xs border text-red-500 font-semibold">Dribbling</td>

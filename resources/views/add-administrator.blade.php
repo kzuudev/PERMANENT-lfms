@@ -1,5 +1,12 @@
 <x-app-layout>
-    <div class="flex my-32">
+    <div class="flex flex-row my-32">
+        
+        <div class="w-4 mx-24 mt-5">
+            <a href="{{ route('assign') }}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </a>
+        </div>
+
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="flex flex-col items-center space-x-6">
               <div class="max-w-7xl">
@@ -8,7 +15,7 @@
                   </h2>
               </div>
   
-              <div class="mt-12">
+              <div class="w-full mt-12">
                 <form action="" method="POST" class="w-full" >
                     @csrf
 
@@ -33,12 +40,7 @@
                         placeholder="Role"
                     />
 
-                    <x-input-label for="upload-img" :value="__('Upload Images')" />
-                    <x-text-input id="upload-img" class="block mt-2 mb-4 w-full"
-                        type="file"
-                        name="upload"
-                         accept="image/*"
-                    />
+                   
 
                     <div class="w-full">
                         <button type="submit" class="mt-4 bg-black text-white p-2 rounded-lg w-full">

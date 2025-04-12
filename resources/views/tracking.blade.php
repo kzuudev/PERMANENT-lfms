@@ -6,7 +6,7 @@
         </a>
     </div>
 
-        <div class="flex items-center justify-center mt-32 space-x-6">
+        <div class="flex items-center justify-center mt-28 space-x-6">
             <div
                 class="flex justify-center font-semibold text-[42px] text-gray-800 dark:text-gray-200 leading-tight"
             >

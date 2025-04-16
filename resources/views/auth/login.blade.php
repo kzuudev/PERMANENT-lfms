@@ -37,7 +37,7 @@
                 <span class="ms-2 text-sm text-gray-600 dark:text-gray-400 text-center">{{ __('Or') }}</span>
             </label>
 
-            <a href="http://localhost:8000/auth/google/redirect" class="button">Google Sign In</a>
+            <a href="http://localhost:8000/auth/google/redirect" class="button flex items-center justify-center mt-4">Google Sign In</a>
         </div>
         
 

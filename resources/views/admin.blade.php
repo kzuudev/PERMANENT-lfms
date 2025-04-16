@@ -60,19 +60,21 @@
     
          
             <div class="grid grid-cols-3 mt-8 gap-6">
-              <div class="flex items-center justify-between px-4 py-3 border-b-2 bg-white border-b-2 border-blue-500 rounded">
-                <div class="px-4 py-10 ">
-                  <h3>Listed Found items</h3>
-                  <p>2</p>
-                </div>
-                
-                <img src="../images/icons8-file-48.png" alt="">
-              </div>
+              <a href="{{ route('found-items') }}">
+                  <div class="flex items-center justify-between px-4 py-3 border-b-2 bg-white border-b-2 border-blue-500 rounded">
+                    <div class="px-4 py-10 ">
+                      <h3 class="font-bold">Listed Found items</h3>
+                      <p class="mt-3">2</p>
+                    </div>
+                    
+                    <img src="../images/icons8-file-48.png" alt="">
+                  </div>
+              </a> 
 
               <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                   <div class="px-4 py-10">
-                    <h3>New Request</h3>
-                    <p>1</p>
+                    <h3 class="font-bold">New Request</h3>
+                    <p class="mt-3">1</p>
                   </div>
 
                   <img src="../images/request.png" alt="">
@@ -80,17 +82,17 @@
 
               <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                   <div  class="px-4 py-10">
-                    <h3>In Process Requests</h3>
-                    <p>3</p>
+                    <h3 class="font-bold">In Process Requests</h3>
+                    <p class="mt-3">3</p>
                   </div>
 
                   <img src="../images/process.png" alt="">
               </div>
 
               <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
-                  <div  class="px-4 py-10">
-                    <h3>Claimed Items</h3>
-                    <p>5</p>
+                  <div class="px-4 py-10">
+                    <h3 class="font-bold" >Claimed Items</h3>
+                    <p class="mt-3">5</p>
                   </div>
   
                   <img src="../images/claimed.png" alt="">
@@ -98,8 +100,8 @@
 
               <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                   <div  class="px-4 py-10">
-                      <h3>Unclaimed Items</h3>
-                      <p>1</p>
+                      <h3 class="font-bold">Unclaimed Items</h3>
+                      <p class="mt-3">1</p>
                 </div>
     
                     <img src="../images/rejected.png" alt="">
@@ -107,8 +109,8 @@
 
                 <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                   <div  class="px-4 py-10">
-                      <h3>Rejected Requests</h3>
-                      <p>2</p>
+                      <h3 class="font-bold">Rejected Requests</h3>
+                      <p class="mt-3">2</p>
                   </div>
     
                     <img src="../images/rejected.png" alt="">

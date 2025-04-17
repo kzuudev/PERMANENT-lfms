@@ -24,7 +24,7 @@
             </div>
 
             <div class="w-full">
-                <h2 class="text-[32px]">New Requests</h2>
+                <h2 class="text-[32px]">Listed Found Items</h2>
 
                 <div class="mt-8 mb-2">
                         <form method="GET" action="">
@@ -50,13 +50,19 @@
                                 <ul class="w-[22.4%] flex flex-col p-2 bg-gray-300 gap-1 rounded">
                                   <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
                                     <li>
-                                      Claimed
+                                      Verified Match
                                     </li>
                                   </a>
         
                                   <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
                                     <li>
-                                      Unclaimed
+                                      Further Verification
+                                    </li>
+                                  </a>
+
+                                  <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                    <li>
+                                      Pending Review
                                     </li>
                                   </a>
                                 </ul>
@@ -87,47 +93,47 @@
                   <thead>
                     <tr class="bg-gray-100">
                       <th class="w-1/4 p-2 border">Name</th>
-                      <th class="w-1/4 p-2 border">Category</th>
-                      <th class="w-1/4 p-2 border">Date</th>
+                      <th class="w-1/4 p-2 border">Student ID</th>
+                      <th class="w-1/4 p-2 border">Item Details</th>
+                      <th class="w-1/4 p-2 border">Date Submitted</th>
                       <th class="w-1/4 p-2 border">Status</th>
+                      <th class="w-1/4 p-2 border">Action</th>
                     </tr>
                   </thead>
 
                   <tbody>
                     <tr class="text-center">
-                      <td class="p-2 text-xs border">Integrative Programming 1</td>
-                      <td class="p-2 text-xs border">Books</td>
-                      <td class="p-2 text-xs border">Shan Hiro Rosario </td>
-                      <td class="p-2 text-xs border text-red-500 font-semibold">Unclaimed</td>
+                      <td class="p-2 text-xs border">John Kevin T. Dela Cruz</td>
+                      <td class="p-2 text-xs border">23-260559</td>
+                      <td class="p-2 text-xs border">Iphone 15 Pro Max - Gray </td>
+                      <td class="p-2 text-xs border font-semibold">04-23-25</td>
+                      <td class="p-2 text-xs border text-yellow-500 font-semibold">Pending Review</td>
+                      <td class="p-2 border"><a class="text-[12px] px-4 py-1 bg-gray-200 rounded" href="#">View</a></td>
                     </tr>
                   </tbody>
 
                   <tbody>
                     <tr class="text-center">
-                      <td class="p-2 text-xs border">Iphone 15 Pro Max</td>
-                      <td class="p-2 text-xs border">Electronics</td>
+                      <td class="p-2 text-xs border">Joshua Ythiel Arriesgado</td>
+                      <td class="p-2 text-xs border">23-260239</td>
+                      <td class="p-2 text-xs border">Watch - Rolex Color Mint Green </td>
+                      <td class="p-2 text-xs border font-semibold">03-13-25</td>
+                      <td class="p-2 text-xs border text-blue-500 font-semibold">Further Verification</td>
+                      <td class="p-2 border"><a class="text-[12px] px-4 py-1 bg-gray-200 rounded" href="#">View</a></td>
+                    </tr>
+                  </tbody>
+
+                  <tbody>
+                    <tr class="text-center">
                       <td class="p-2 text-xs border">Joshua Anoos</td>
-                      <td class="p-2 text-xs border text-green-500 font-semibold">Claimed</td>
+                      <td class="p-2 text-xs border">23-230635</td>
+                      <td class="p-2 text-xs border">Laptop - ASUS Color Black </td>
+                      <td class="p-2 text-xs border font-semibold">05-03-25</td>
+                      <td class="p-2 text-xs border text-green-500 font-semibold">Verified Match</td>
+                      <td class="p-2 border"><a class="text-[12px] px-4 py-1 bg-gray-200 rounded" href="#">View</a></td>
                     </tr>
                   </tbody>
-
-                  <tbody>
-                    <tr class="text-center">
-                      <td class="p-2 text-xs border">Bracelet - I love Batangas</td>
-                      <td class="p-2 text-xs border">Accessories</td>
-                      <td class="p-2 text-xs border">Mico Villanueva</td>
-                      <td class="p-2 text-xs border text-green-500 font-semibold">Claimed</td>
-                    </tr>
-                  </tbody>
-
-                  <tbody>
-                    <tr class="text-center">
-                      <td class="p-2 text-xs border">MacBook M3 Space Gray</td>
-                      <td class="p-2 text-xs border">Electronics</td>
-                      <td class="p-2 text-xs border">Lyle Rementizo</td>
-                      <td class="p-2 text-xs border text-green-500 font-semibold">Claimed</td>
-                    </tr>
-                  </tbody>
+          
                 </table>
             </div>
             </div>          

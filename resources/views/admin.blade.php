@@ -71,34 +71,31 @@
                   </div>
               </a> 
 
-              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
-                  <div class="px-4 py-10">
-                    <h3 class="font-bold">New Request</h3>
-                    <p class="mt-3">1</p>
-                  </div>
+              <a href="{{ route('new-request') }}">
+                  <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+                    <div class="px-4 py-10">
+                      <h3 class="font-bold">New Request</h3>
+                      <p class="mt-3">1</p>
+                    </div>
 
-                  <img src="../images/request.png" alt="">
-              </div>
+                    <img src="../images/request.png" alt="">
+                </div>
+              </a>
+        
 
-              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
-                  <div  class="px-4 py-10">
-                    <h3 class="font-bold">In Process Requests</h3>
-                    <p class="mt-3">3</p>
-                  </div>
-
-                  <img src="../images/process.png" alt="">
-              </div>
-
-              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+              <a href="{{ route('claimed-items') }}">
+                <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                   <div class="px-4 py-10">
                     <h3 class="font-bold" >Claimed Items</h3>
                     <p class="mt-3">5</p>
                   </div>
-  
                   <img src="../images/claimed.png" alt="">
               </div>
+              </a>
 
-              <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
+
+              <a href="{{ route('unclaimed-items') }}">
+                <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                   <div  class="px-4 py-10">
                       <h3 class="font-bold">Unclaimed Items</h3>
                       <p class="mt-3">1</p>
@@ -106,7 +103,9 @@
     
                     <img src="../images/rejected.png" alt="">
                 </div>
-
+              </a>
+             
+              <a href="{{ route('rejected-request') }}">
                 <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                   <div  class="px-4 py-10">
                       <h3 class="font-bold">Rejected Requests</h3>
@@ -115,6 +114,8 @@
     
                     <img src="../images/rejected.png" alt="">
                 </div>
+              </a>
+
             </div>
         
       </div>

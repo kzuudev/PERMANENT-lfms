@@ -24,7 +24,7 @@
             </div>
 
             <div class="w-full">
-                <h2 class="text-[32px]">New Requests</h2>
+                <h2 class="text-[32px]">Rejected Requests</h2>
 
                 <div class="mt-8 mb-2">
                         <form method="GET" action="">
@@ -50,13 +50,25 @@
                                 <ul class="w-[22.4%] flex flex-col p-2 bg-gray-300 gap-1 rounded">
                                   <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
                                     <li>
-                                      Claimed
+                                      Electronics
                                     </li>
                                   </a>
         
                                   <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
                                     <li>
-                                      Unclaimed
+                                      Accessories
+                                    </li>
+                                  </a>
+
+                                  <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                    <li>
+                                      Clothing
+                                    </li>
+                                  </a>
+
+                                  <a href="" class="w-full px-3 py-2 text-sm hover:bg-blue-300 rounded">
+                                    <li>
+                                     Books
                                     </li>
                                   </a>
                                 </ul>
@@ -86,48 +98,56 @@
                 <table class="table-fixed w-full border-collapse border border-gray-300">
                   <thead>
                     <tr class="bg-gray-100">
-                      <th class="w-1/4 p-2 border">Name</th>
+                      <th class="w-1/4 p-2 border">Item Name</th>
                       <th class="w-1/4 p-2 border">Category</th>
-                      <th class="w-1/4 p-2 border">Date</th>
+                      <th class="w-1/4 p-2 border">Found Date</th>
+                      <th class="w-1/4 p-2 border">Claimed Date</th>
+                      <th class="w-1/4 p-2 border">Found By</th>
+                      <th class="w-1/4 p-2 border">Claimed By</th>
                       <th class="w-1/4 p-2 border">Status</th>
+                      <th class="w-1/4 p-2 border">Actions</th>
                     </tr>
                   </thead>
-
+          
                   <tbody>
                     <tr class="text-center">
-                      <td class="p-2 text-xs border">Integrative Programming 1</td>
-                      <td class="p-2 text-xs border">Books</td>
-                      <td class="p-2 text-xs border">Shan Hiro Rosario </td>
-                      <td class="p-2 text-xs border text-red-500 font-semibold">Unclaimed</td>
-                    </tr>
-                  </tbody>
-
-                  <tbody>
-                    <tr class="text-center">
-                      <td class="p-2 text-xs border">Iphone 15 Pro Max</td>
-                      <td class="p-2 text-xs border">Electronics</td>
-                      <td class="p-2 text-xs border">Joshua Anoos</td>
-                      <td class="p-2 text-xs border text-green-500 font-semibold">Claimed</td>
-                    </tr>
-                  </tbody>
-
-                  <tbody>
-                    <tr class="text-center">
-                      <td class="p-2 text-xs border">Bracelet - I love Batangas</td>
+                      <td class="p-2 text-xs border">Rolex Watch</td>
                       <td class="p-2 text-xs border">Accessories</td>
-                      <td class="p-2 text-xs border">Mico Villanueva</td>
-                      <td class="p-2 text-xs border text-green-500 font-semibold">Claimed</td>
+                      <td class="p-2 text-xs border">03-05-25</td>
+                      <td class="p-2 text-xs border font-semibold">03-10-25</td>
+                      <td class="p-2 text-xs border font-semibold">John Kevin T. Dela Cruz</td>
+                      <td class="p-2 text-xs border font-semibold">John Kevin T. Dela Cruz</td>
+                      <td class="p-2 text-xs border text-red-500 font-semibold">Rejected</td>
+                      <td class="p-2 border"><a class="text-[12px] px-4 py-1 bg-gray-200 rounded" href="#">View Details</a></td>
                     </tr>
                   </tbody>
 
                   <tbody>
                     <tr class="text-center">
-                      <td class="p-2 text-xs border">MacBook M3 Space Gray</td>
+                      <td class="p-2 text-xs border">MacBook M1</td>
                       <td class="p-2 text-xs border">Electronics</td>
-                      <td class="p-2 text-xs border">Lyle Rementizo</td>
-                      <td class="p-2 text-xs border text-green-500 font-semibold">Claimed</td>
+                      <td class="p-2 text-xs border">02-15-25</td>
+                      <td class="p-2 text-xs border font-semibold">02-11-25</td>
+                      <td class="p-2 text-xs border font-semibold">Shan Hiro Rosario</td>
+                      <td class="p-2 text-xs border font-semibold">Shan Hiro Rosario</td>
+                      <td class="p-2 text-xs border text-red-500 font-semibold">Rejected</td>
+                      <td class="p-2 border"><a class="text-[12px] px-4 py-1 bg-gray-200 rounded" href="#">View Details</a></td>
                     </tr>
                   </tbody>
+
+                  <tbody>
+                    <tr class="text-center">
+                      <td class="p-2 text-xs border">Rolex Watch</td>
+                      <td class="p-2 text-xs border">Accessories</td>
+                      <td class="p-2 text-xs border">03-05-25</td>
+                      <td class="p-2 text-xs border font-semibold">03-10-25</td>
+                      <td class="p-2 text-xs border font-semibold">John Kevin T. Dela Cruz</td>
+                      <td class="p-2 text-xs border font-semibold">John Kevin T. Dela Cruz</td>
+                      <td class="p-2 text-xs border text-red-500 font-semibold">Rejected</td>
+                      <td class="p-2 border"><a class="text-[12px] px-4 py-1 bg-gray-200 rounded" href="#">View Details</a></td>
+                    </tr>
+                  </tbody>
+
                 </table>
             </div>
             </div>          

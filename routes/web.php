@@ -41,6 +41,27 @@ Route::get('/add-administrator', function () {
 })->middleware(['auth', 'verified'])->name('add-administrator');
 
 
+Route::get('/found-items', function () {
+    return view('found-items');
+})->middleware(['auth', 'verified'])->name('found-items');
+
+Route::get('/new-request', function () {
+    return view('new-request');
+})->middleware(['auth', 'verified'])->name('new-request');
+
+Route::get('/claimed-items', function () {
+    return view('claimed-items');
+})->middleware(['auth', 'verified'])->name('claimed-items');
+
+Route::get('/unclaimed-items', function () {
+    return view('unclaimed-items');
+})->middleware(['auth', 'verified'])->name('unclaimed-items');
+
+Route::get('/rejected-request', function () {
+    return view('rejected-request');
+})->middleware(['auth', 'verified'])->name('rejected-request');
+
+
 Route::get('auth/google/redirect', [GoogleAuthController::class, 'redirect']);
 Route::get('auth/google/callback', [GoogleAuthController::class, 'callback']);
 

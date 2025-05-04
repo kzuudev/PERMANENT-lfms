@@ -16,52 +16,98 @@
                 <div class="flex flex-col gap-2 mb-3">
                     <h2 class="font-semibold">Category</h2>
                     <ul class="flex gap-4 rounded-md">
-                        <li class="p-2 bg-gray-300 rounded-md text-xs font-semibold ">Electronics</li>
-                        <li class="p-2 bg-gray-300 rounded-md text-xs font-semibold">Clothing</li>
-                        <li class="p-2 bg-gray-300 rounded-md text-xs font-semibold">Books</li>
-                        <li class="p-2 bg-gray-300 rounded-md text-xs font-semibold">Accessories</li>
+                      <li>
+                        <button 
+                          type="button" 
+                          class="p-2 bg-gray-300 hover:bg-gray-400 rounded-md text-xs font-semibold" 
+                          aria-pressed="false">
+                          Electronics
+                        </button>
+                      </li>
+                      <li>
+                        <button 
+                          type="button" 
+                          class="p-2 bg-gray-300 hover:bg-gray-400 rounded-md text-xs font-semibold" 
+                          aria-pressed="false">
+                          Clothing
+                        </button>
+                      </li>
+                      <li>
+                        <button 
+                          type="button" 
+                          class="p-2 bg-gray-300 hover:bg-gray-400 rounded-md text-xs font-semibold" 
+                          aria-pressed="false">
+                          Books
+                        </button>
+                      </li>
+                      <li>
+                        <button 
+                          type="button" 
+                          class="p-2 bg-gray-300 hover:bg-gray-400 rounded-md text-xs font-semibold" 
+                          aria-pressed="false">
+                          Accessories
+                        </button>
+                      </li>
                     </ul>
-                </div>
-
-                <div class="mt-1">
-                    <form action="" method="POST" class="w-full" >
-                        @csrf
-
-                        <x-input-label for="item-name" :value="__('Item Name')" />
-                        <x-text-input id="item-name" class="block mt-2 mb-4  w-full"
-                            type="text"
-                            name="description"
-                            placeholder="Item Name"
-                        />
-
-                        <x-input-label for="location" :value="__('Location Found')" />
-                        <x-text-input id="description" class="block mt-2 mb-4  w-full"
-                            type="text"
-                            name="description"
-                            placeholder="Where did you lost it"
-                        />
-
-                        <x-input-label for="description" :value="__('Item Description')" />
-                        <x-text-input id="description" class="block mt-2 mb-4  w-full"
-                            type="text"
-                            name="description"
-                            placeholder="Describe your lost item"
-                        />
-
-                        <x-input-label for="upload" :value="__('Upload Images')" />
-                        <x-text-input id="upload" class="block mt-2 mb-4 w-full"
-                            type="file"
-                            name="upload"
-                             accept="image/*"
-                        />
-
-                        <div class="w-7/12">
-                            <button type="submit" class="mt-4 bg-black text-white p-2 rounded-lg w-full">
-                                Submit
-                            </button>
-                        </div>
+                  </div>
+                  
+                  <div class="">
+                    <form id="lost__item-form" action="{{ route('lostItem.store') }}" method="POST" class="w-full" enctype="multipart/form-data">
+                      @csrf
+                      <x-input-label for="item_name" :value="__('Item Name')" />
+                      <x-text-input id="item_name" class="block mt-2 mb-4 w-full"
+                        type="text"
+                        name="item_name"
+                        placeholder="Item Name"
+                        required
+                      />
+                      
+                      <x-input-label for="item_description" :value="__('Item Description')" />
+                      <x-text-input id="item_description" class="block mt-2 mb-4 w-full"
+                        type="text"
+                        name="item_description"
+                        placeholder="Describe your lost item"
+                      />
+                      
+                      <x-input-label for="date_lost" :value="__('Date Lost')" />
+                      <x-text-input id="date_lost" class="block mt-2 mb-4 w-full"
+                        type="date"
+                        name="date_lost"
+                        placeholder="When did you lose the item"
+                      />
+                      
+                      <x-input-label for="location_found" :value="__('Location Lost')" />
+                      <x-text-input id="location_found" class="block mt-2 mb-4 w-full"
+                        type="text"
+                        name="location_found"
+                        placeholder="Where did you lose it"
+                      />
+                      
+                      <x-input-label for="image" :value="__('Upload Images')" />
+                      <x-text-input id="image" class="block mt-2 mb-4 w-full"
+                        type="file"
+                        name="image"
+                        accept="image/*"
+                      />
+                      
+                      <div class="w-7/12">
+                        <button type="submit" class="mt-4 bg-black text-white p-2 rounded-lg w-full">
+                          Submit
+                        </button>
+                      </div>
                     </form>
-                </div>
+
+                    @if(session()->has('message'))
+                        <div class="alert-success-container mb-4">
+                            <div class="alert alert-success">
+                                {{ session()->get('message') }}
+                                <a href="/lost-details" class="text-blue-600 underline ml-2">Go Back</a>
+                            </div>
+                        </div>
+                    @endif
+                  </div>
+
+
             </div>
         </div>
     </div>

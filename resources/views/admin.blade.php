@@ -38,9 +38,6 @@
                     <img class="w-6 h-6" src="../images/reports.png" alt="">
                       Claim Requests</li></a>
 
-                    <a href="{{ route('handle-ticket') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
-                    <img class="w-6 h-6" src="../images/ticket.png" alt="">
-                      Ticket Management</li></a>
                       
                     <a href="{{ route('assign') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
                     <img class="w-6 h-6" src="../images/user-management.png" alt="">
@@ -78,7 +75,7 @@
               <a href="{{ route('new-request') }}">
                   <div class="flex items-center justify-between px-4 py-3 border-b-2  bg-white border-b-2 border-blue-500 rounded">
                     <div class="px-4 py-10">
-                      <h3 class="font-bold">New Request</h3>
+                      <h3 class="font-bold">Ticket Request</h3>
                       <p class="mt-3">1</p>
                     </div>
 

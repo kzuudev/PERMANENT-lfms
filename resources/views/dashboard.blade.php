@@ -44,9 +44,9 @@
                         View Status Tracking
                     </a>
 
-                    <a href="{{ route('ticket') }}" class="inline-block px-6 py-2 text-center bg-black text-white font-semibold rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    {{-- <a href="{{ route('ticket') }}" class="inline-block px-6 py-2 text-center bg-black text-white font-semibold rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
                         Request Claim Ticket
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         </div>

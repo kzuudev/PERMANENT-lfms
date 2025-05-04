@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GoogleAuthController;
+use App\Http\Controllers\LostItemController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -61,6 +62,15 @@ Route::get('/rejected-request', function () {
     return view('rejected-request');
 })->middleware(['auth', 'verified'])->name('rejected-request');
 
+Route::get('/ticket-request', function () {
+    return view('ticket-request');
+})->middleware(['auth', 'verified'])->name('ticket');
+
+
+Route::get('/handle-ticket', function () {
+    return view('handle-ticket');
+})->middleware(['auth', 'verified'])->name('handle-ticket');
+
 
 Route::get('auth/google/redirect', [GoogleAuthController::class, 'redirect']);
 Route::get('auth/google/callback', [GoogleAuthController::class, 'callback']);
@@ -70,5 +80,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+Route::post('/lost-details', [LostItemController::class, 'store'])->name('lostItem.store'); 
 
 require __DIR__.'/auth.php';

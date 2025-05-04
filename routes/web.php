@@ -25,9 +25,12 @@ Route::get('/admin', function () {
     return view('admin');
 })->middleware(['auth', 'verified'])->name('admin');
 
-Route::get('/item-list', function () {
-    return view('item-list');
-})->middleware(['auth', 'verified'])->name('item');
+// Route::get('/item-list', function () {
+//     return view('item-list');
+// })->middleware(['auth', 'verified'])->name('item');
+
+Route::get('/item-list', [LostItemController::class, 'index'])->middleware(['auth', 'verified'])->name('item');
+
 
 Route::get('/claim-requests', function () {
     return view('claim-requests');

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('location_found');
             $table->string('item_description')->nullable();
             $table->date('date_lost')->nullable();
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

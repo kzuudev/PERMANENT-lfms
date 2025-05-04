@@ -52,7 +52,7 @@
                   </div>
                   
                   <div class="">
-                    <form id="lost__item-form" action="{{ route('lostItem.store') }}" method="POST" class="w-full" enctype="multipart/form-data">
+                    <form id="lost__item-form" action="{{ route('lostItem.store') }}" method="POST" enctype="multipart/form-data">
                       @csrf
                       <x-input-label for="item_name" :value="__('Item Name')" />
                       <x-text-input id="item_name" class="block mt-2 mb-4 w-full"
@@ -101,13 +101,12 @@
                         <div class="alert-success-container mb-4">
                             <div class="alert alert-success">
                                 {{ session()->get('message') }}
-                                <a href="/lost-details" class="text-blue-600 underline ml-2">Go Back</a>
+                                <a href="{{ route('dashboard') }}" class="text-blue-600 underline ml-2">Go Back</a>
                             </div>
                         </div>
                     @endif
+
                   </div>
-
-
             </div>
         </div>
     </div>

@@ -124,13 +124,13 @@
          </div>
           </div>
          
-      <div class="w-full px-4 px-4 mt-4 overflow-auto">
+        <div class="w-full px-4 px-4 mt-4 overflow-auto">
             <div class="w-full grid grid-cols-3 px-4 px-4 mt-4 gap-6">
+              @foreach($lostItems as $item)
                 <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
                     <div class="mb-3">
                         <h3 class="category p-6 bg-[#eef5fd]">Accessories</h3>
                     </div>
-
                   <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
                         <div class="border-b-2 border-gray-200">
                           <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
@@ -143,247 +143,36 @@
 
                         <div class="flex flex-col gap-2">
                           <h4 class="text-lg text-gray-400">Email</h4>
-                          <p  class="student-email text-sm">johnkevin.delacruz@my.jru.edu</p>
+                          <p  class="student-email text-sm">{{ $item->reported_by_email }}</p>
                         </div>
 
                         <div class="flex flex-col gap-2">
-                          <h4 class="text-lg text-gray-400">What did you lose/find</h4>
+                          <h4 class="text-lg text-gray-400">Item Description</h4>
                           <p 
-                          class="find-item text-sm">Watch</p>
+                          class="find-item text-sm">{{$item->item_description }}</p>
                         </div>
 
                         <div class="flex flex-col gap-2">
-                          <h4 class="text-lg text-gray-400">What date did you find it</h4>
-                          <p class="date text-sm">April 7, 2025</p>
+                          <h4 class="text-lg text-gray-400">Date Lost</h4>
+                          <p class="date text-sm">{{$item->date_lost }}</p>
                         </div>
                         
                         <div class="flex flex-col gap-2">
-                          <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                          <p class="place-found text-sm">Library at 3:00 pm</p>
+                          <h4 class="text-lg text-gray-400">Location Found</h4>
+                          <p class="place-found text-sm">{{$item->location_found }}</p>
                         </div>
 
                         <div class="flex flex-col gap-2">
                           <h4 class="text-lg text-gray-400">Turned it by</h4>
-                          <p  class="postName text-sm">John Kevin</p>
+                          <p  class="postName text-sm">{{$item->reporter_name }}</p>
                         </div>
                     </div>
+                </div>
+                @endforeach
               </div>
 
-              <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
-                <div class="mb-3">
-                    <h3 class="category p-6 bg-[#eef5fd]">Electronics</h3>
-                </div>
 
-              <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
-                    <div class="border-b-2 border-gray-200">
-                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
-                      <p class="student-id text-sm">23-250216</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Email</h4>
-                      <p  class="student-email text-sm">mico.villanueva@my.jru.edu</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                      <p 
-                       class="find-item text-sm">Laptop</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
-                      <p class="date text-sm">April 7, 2025</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                      <p class="place-found text-sm">Centennial at 1:00 pm</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Turned it by</h4>
-                      <p  class="postName text-sm">Mico Villanueva</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
-              <div class="mb-3">
-                  <h3 class="category p-6 bg-[#eef5fd]">Books</h3>
-              </div>
-
-                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
-                    <div class="border-b-2 border-gray-200">
-                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
-                      <p class="student-id text-sm">23-203229</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Email</h4>
-                      <p  class="student-email text-sm">shanhiro.rosario@my.jru.edu</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                      <p 
-                      class="find-item text-sm">Integrative Programming 1</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
-                      <p class="date text-sm">April 7, 2025</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                      <p class="place-found text-sm">Ground Floor at 4:00 pm</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Turned it by</h4>
-                      <p  class="postName text-sm">Shan Hiro Rosario</p>
-                    </div>
-                </div>
-            </div> 
-            
-            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
-              <div class="mb-3">
-                  <h3 class="category p-6 bg-[#eef5fd]">Clothing</h3>
-              </div>
-
-                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
-                    <div class="border-b-2 border-gray-200">
-                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
-                      <p class="student-id text-sm">23-258981</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Email</h4>
-                      <p  class="student-email text-sm">shanhiro.rosario@my.jru.edu</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                      <p 
-                      class="find-item text-sm">Black Hoodie</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
-                      <p class="date text-sm">April 7, 2025</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                      <p class="place-found text-sm">Canteen at 3:00 pm</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Turned it by</h4>
-                      <p  class="postName text-sm">Alvin Remitilla</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
-              <div class="mb-3">
-                  <h3 class="category p-6 bg-[#eef5fd]">Accessories</h3>
-              </div>
-
-                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
-                    <div class="border-b-2 border-gray-200">
-                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
-                      <p class="student-id text-sm">23-232229</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Email</h4>
-                      <p  class="student-email text-sm">joshua.anoos@my.jru.edu</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                      <p 
-                      class="find-item text-sm">Lipstick</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
-                      <p class="date text-sm">April 7, 2025</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                      <p class="place-found text-sm">Parking at 2:00 pm</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Turned it by</h4>
-                      <p  class="postName text-sm">Joshua Anoors</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
-              <div class="mb-3">
-                  <h3 class="category p-6 bg-[#eef5fd]">Electronics</h3>
-              </div>
-
-                <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
-                    <div class="border-b-2 border-gray-200">
-                      <img class="item-img w-24 h-24 mb-4 rounded" src="./images/sample-watch.jpg.webp" alt="">
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
-                      <p class="student-id text-sm">23-202129</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Email</h4>
-                      <p  class="student-email text-sm">joshuaythiel.arriesgado@my.jru.edu</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What did you lose/find</h4>
-                      <p 
-                      class="find-item text-sm">Phone (Iphone 16 promax)</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">What date did you find it</h4>
-                      <p class="date text-sm">April 7, 2025</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Where did you find it, and at what time did you find it?</h4>
-                      <p class="place-found text-sm">Room 403 at 8:00 am</p>
-                    </div>
-
-                    <div class="flex flex-col gap-2">
-                      <h4 class="text-lg text-gray-400">Turned it by</h4>
-                      <p  class="postName text-sm">Joshua Ythiel Arriesgado</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+              
     </div>   
       <div id="modal" class="w-1/4 h-full absolute right-0 bottom-[2px]  hidden">
         <div id="selected-card" class="card w-full h-5/6 flex flex-col bg-white rounded-lg gap-3 drop-shadow-xl overflow-auto hidden">

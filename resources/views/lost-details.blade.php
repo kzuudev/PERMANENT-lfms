@@ -98,7 +98,7 @@
                     </form>
 
                     @if(session()->has('message'))
-                        <div class="alert-success-container mb-4">
+                        <div class="alert-success-container">
                             <div class="alert alert-success">
                                 {{ session()->get('message') }}
                                 <a href="{{ route('dashboard') }}" class="text-blue-600 underline ml-2">Go Back</a>

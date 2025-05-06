@@ -19,6 +19,8 @@
             </form>
          </div>
 
+  
+
         <div class="fixed">
             <ul class="flex flex-col gap-2 p-4 rounded-md">
                     <a href="{{ route('admin') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
@@ -129,16 +131,11 @@
               @foreach($lostItems as $item)
                 <div class="card flex flex-col bg-white rounded-lg gap-3 hover:outline">
                     <div class="mb-3">
-                        <h3 class="category p-6 bg-[#eef5fd]">Accessories</h3>
+                        <h3 class="category p-6 bg-[#eef5fd]">{{ $item->selected_category }}</h3>
                     </div>
                   <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
                         <div class="border-b-2 border-gray-200">
                           <img class="item-img w-24 h-24 mb-4 rounded" src="{{ Storage::url($item->image) }}" alt="">
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                          <h4 id="studID" class="text-lg text-gray-400">Student ID</h4>
-                          <p class="student-id text-sm">23-260829</p>
                         </div>
 
                         <div class="flex flex-col gap-2">
@@ -170,18 +167,14 @@
                 </div>
                 @endforeach
               </div>
-
-
-              
     </div>   
+    
       <div id="modal" class="w-1/4 h-full absolute right-0 bottom-[2px]  hidden">
         <div id="selected-card" class="card w-full h-5/6 flex flex-col bg-white rounded-lg gap-3 drop-shadow-xl overflow-auto hidden">
 
         </div>
+      </div>
 
-
-
-          </div>
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @vite(['resources/js/filter.js'])
         @vite(['resources/js/viewItem.js'])
+        @vite(['resources/js/selectedCategory.js'])
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-white dark:bg-gray-900">

@@ -27,6 +27,9 @@ class LostItemRequest extends FormRequest
             'item_description' => 'required|string|max:150',
             'date_lost' => 'required|date',
             'image' => 'required||nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'reported_by_email',
+            'reporter_name',
+            'selected_category',
         ];
     }
 

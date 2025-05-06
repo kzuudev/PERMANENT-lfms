@@ -133,7 +133,7 @@
                     </div>
                   <div data-name="card" class="flex flex-col gap-4 pl-2.5 px-2">
                         <div class="border-b-2 border-gray-200">
-                          <img class="item-img w-24 h-24 mb-4 rounded" src="{{ $item->image }}" alt="">
+                          <img class="item-img w-24 h-24 mb-4 rounded" src="{{ Storage::url($item->image) }}" alt="">
                         </div>
 
                         <div class="flex flex-col gap-2">
@@ -143,7 +143,7 @@
 
                         <div class="flex flex-col gap-2">
                           <h4 class="text-lg text-gray-400">Email</h4>
-                          <p  class="student-email text-sm">{{ Auth::user()->email }}</p>
+                          <p  class="student-email text-sm">{{ $item->reported_by_email }}</p>
                         </div>
 
                         <div class="flex flex-col gap-2">
@@ -164,7 +164,7 @@
 
                         <div class="flex flex-col gap-2">
                           <h4 class="text-lg text-gray-400">Turned it by</h4>
-                          <p  class="postName text-sm">{{ Auth::user()->name }}</p>
+                          <p  class="postName text-sm">{{$item->reporter_name }}</p>
                         </div>
                     </div>
                 </div>

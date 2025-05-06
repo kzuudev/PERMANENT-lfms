@@ -17,5 +17,7 @@ class LostItem extends Model
             'item_description',
             'date_lost',
             'image',
+            'reported_by_email',
+            'reporter_name',    
         ];
 }

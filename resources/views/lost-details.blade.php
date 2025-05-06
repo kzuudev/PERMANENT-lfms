@@ -14,12 +14,12 @@
 
             <div name="form">
                 <div class="flex flex-col gap-2 mb-3">
-                    <h2 class="font-semibold">Category</h2>
+                    <h2 class="font-semibold">Category</h2> 
                     <ul class="flex gap-4 rounded-md">
                       <li>
                         <button 
                           type="button" 
-                          class="p-2 bg-gray-300 hover:bg-gray-400 rounded-md text-xs font-semibold" 
+                          class="p-2 bg-gray-300 hover:bg-gray-400  rounded-md text-xs font-semibold" 
                           aria-pressed="false">
                           Electronics
                         </button>

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 use App\Models\LostItem;
-
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class LostItemController extends Controller
 {
@@ -12,7 +14,6 @@ class LostItemController extends Controller
     {
 
         // dd($request->all());
-
 
         $request->validate([
             'item_name' => 'required|string|max:20',
@@ -28,7 +29,11 @@ class LostItemController extends Controller
             $imagePath = $request->file('image')->store('lostItem', 'public');
         }
 
-        $user = auth()->user();
+        $currentUser = auth()->user();
+
+        // // Log user info for debugging
+        // Log::info('Creating lost item with user email: ' . $currentUser->email);
+        // Log::info('Creating lost item with user name: ' . $currentUser->name);
 
         $lostItems = LostItem::create([
             'item_name' => $request->item_name,
@@ -36,8 +41,8 @@ class LostItemController extends Controller
             'item_description' => $request->item_description,
             'date_lost' => $request->date_lost,
             'image' => $imagePath,
-            'reported_by_email' => $user->email,
-            'reporter_name' => $user->name,
+            'reported_by_email' => $currentUser->email,
+            'reporter_name' => $currentUser->name,
         ]);
 
         $greetings = "Thank You! We understand how important your item is. We'll notify you if a match is found — stay hopeful!";

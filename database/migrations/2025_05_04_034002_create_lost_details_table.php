@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('item_description')->nullable();
             $table->date('date_lost')->nullable();
             $table->string('image')->nullable();
+            $table->string('reported_by_email');
+            $table->string('reporter_name');
+            $table->string('selected_category');
             $table->timestamps();
         });
     }

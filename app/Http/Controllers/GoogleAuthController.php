@@ -33,7 +33,16 @@ class GoogleAuthController extends Controller
             ]);
         }
         
+        // Auth::login($user);
+        // return redirect('/dashboard');
+
         Auth::login($user);
-        return redirect('/dashboard');
+
+        if (Str::endsWith($user->email, '@gmail.com')) {
+            return redirect()->intended(route('admin', absolute: false));
+        } else if (Str::endsWith($user->email, '@my.jru.edu')) {
+            return redirect()->intended(route('dashboard', absolute: false));
+        }
+       
     }
 }

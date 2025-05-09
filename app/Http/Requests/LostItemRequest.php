@@ -41,6 +41,7 @@ class LostItemRequest extends FormRequest
             'item_description.required' => 'Please provide a item description.',
             'date_lost.required' => 'Please specify the date.',
             'image.required' => 'Please provide a item image.',
+            'selected_category'  => 'Please specify the category',
         ];
     }
 }

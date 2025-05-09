@@ -30,11 +30,11 @@
                       <img src="../images/dashboard.png" alt="">
                       Dashboard</li></a>
 
-                    <a href="{{ route('item') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
+                    <a href="{{ route('item-list') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
                     <img class="w-6 h-6" src="../images/item.png" alt="">
                       Lost Item List</li></a>
 
-                    <a href="{{ route('claim') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
+                    <a href="{{ route('claim-requests') }}"><li class="flex gap-2 hover:bg-gray-300 px-2 py-1 rounded cursor-pointer text-white">
                     <img class="w-6 h-6" src="../images/reports.png" alt="">
                       Claim Requests</li></a>
 

@@ -3,6 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\LostItemController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClaimRequestsController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,12 +32,14 @@ Route::get('/admin', function () {
 //     return view('item-list');
 // })->middleware(['auth', 'verified'])->name('item');
 
-Route::get('/item-list', [LostItemController::class, 'index'])->middleware(['auth', 'verified'])->name('item');
+// Route::get('/item-list', [LostItemController::class, 'itemList'])->middleware(['auth', 'verified'])->name('item');
+Route::get('/item-list', [AdminController::class, 'index'])->name('item-list');
+Route::get('/manage-items', [LostItemController::class, 'manageItems'])->middleware(['auth', 'verified'])->name('manage-items');
+Route::get('/claim-requests', [LostItemController::class, 'claimRequest'])->middleware(['auth', 'verified'])->name('claim-requests');
 
-
-Route::get('/claim-requests', function () {
-    return view('claim-requests');
-})->middleware(['auth', 'verified'])->name('claim');
+// Route::get('/claim-requests', function () {
+//     return view('claim-requests');
+// })->middleware(['auth', 'verified'])->name('claim');
 
 Route::get('/assign-staff', function () {
     return view('assign-staff');
@@ -70,9 +75,9 @@ Route::get('/ticket-request', function () {
 })->middleware(['auth', 'verified'])->name('ticket');
 
 
-Route::get('/handle-ticket', function () {
-    return view('handle-ticket');
-})->middleware(['auth', 'verified'])->name('handle-ticket');
+// Route::get('/manage-items', function () {
+//     return view('manage-items');
+// })->middleware(['auth', 'verified'])->name('manage-items');
 
 
 Route::get('auth/google/redirect', [GoogleAuthController::class, 'redirect']);

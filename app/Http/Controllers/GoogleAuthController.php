@@ -33,9 +33,7 @@ class GoogleAuthController extends Controller
             ]);
         }
         
-        // Auth::login($user);
-        // return redirect('/dashboard');
-
+     // login the user first before validating their email whether admin or student.
         Auth::login($user);
 
         if (Str::endsWith($user->email, '@gmail.com')) {

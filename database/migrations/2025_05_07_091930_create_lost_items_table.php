@@ -11,25 +11,25 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lost_details', function (Blueprint $table) {
+        Schema::create('lost_items', function (Blueprint $table) {
             $table->id();
+            $table->string('category');
+            $table->string('student_name');
             $table->string('item_name');
+            $table->date('date_reported');
             $table->string('location_found');
-            $table->string('item_description')->nullable();
-            $table->date('date_lost')->nullable();
-            $table->string('image')->nullable();
-            $table->string('reported_by_email');
-            $table->string('reporter_name');
-            $table->string('selected_category')->nullable();
+            $table->string('turned_by');
+            $table->string('image_url')->nullable();
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('lost_details');
+        Schema::dropIfExists('lost_items');
     }
 };
